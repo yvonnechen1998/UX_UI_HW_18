@@ -1,0 +1,246 @@
+
+body{ 
+    font-family: 'Inter', sans-serif;
+    background: url('../images/background2.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: radial-gradient(50% 50.00% at 50% 50.00%, #FF8696 0%, rgba(255, 215, 154, 0.00) 80%); */
+    /* background: radial-gradient(#FF8696, #FFD79A 0%); */
+    /* background: radial-gradient(ellipse at top, rgba(255, 134, 150, 0.3), transparent),
+            radial-gradient(ellipse at bottom, rgba(255, 215, 154, 0.2), transparent);   */
+}
+h1,p { 
+font-family: 'Inter', sans-serif;
+}
+
+header, footer { 
+display: flex;
+justify-content: space-between; 
+align-items: center;
+padding: 40px; 
+}
+
+.logo img { 
+max-width: 42px;
+} 
+
+.navigation ul { 
+list-style: none;
+display: flex;
+}
+
+.navigation li { 
+margin-right: 20px;
+}
+
+/* hero */
+.heroImg { 
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 200px;
+margin-right: 200px;
+gap: 32px;
+flex-direction: column;
+}
+
+h1 { 
+font-family: Inter;
+font-size: 42px;
+font-style: normal;
+font-weight: 400;
+line-height: 63px;
+}
+
+h2 { 
+font-family: Inter;
+text-align: center;
+font-style: normal;
+font-size: 22px; 
+line-height: 33px;
+font-weight: 400;
+}
+
+.content { 
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+.location { 
+justify-content: center;
+display: flex;
+align-items: center;
+gap: 8px;
+margin-bottom: 32px; 
+}
+
+.resume-button-container { 
+display: flex;
+justify-content: center;
+margin-top: 32px;
+}
+
+.resume-button { 
+display: flex;
+padding: 10px 20px;
+align-items: center;
+justify-content: center;
+gap: 8px;
+border-radius: 12px;
+border: 1px solid lightgrey;
+/* background: #FFF */
+background: rgba(255, 255, 255, 0.3); 
+}
+
+.cards-container { 
+margin-top: 100px;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+gap: 16px; 
+flex-wrap: wrap;
+}
+
+.card h3 { 
+color: #313134;
+font-family: Inter;
+font-size:16px; 
+font-style: normal;
+font-weight:400; 
+line-height: 24px;
+}
+
+.card p { 
+color: #313134;
+font-family: Inter;
+font-size:12px; 
+font-style: normal;
+font-weight:400; 
+line-height: 18px;  
+}
+
+.card { 
+display: flex; 
+padding: 24px 24px 32px 32px; 
+flex-direction: column;
+align-items: flex-start;
+min-width: 200px;
+width: calc(33.33% - 16px);
+max-width: 350px;
+border-radius: 24px;
+border: 25px white;
+background: rgba(255, 255, 255, 0.7); 
+box-shadow: 0px 8px 16px 4px rgba(194, 194, 194, 0.20);
+margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%; /* Cards take full width on smaller screens */
+  }
+}
+
+/* Footer */
+.connect { 
+display: flex;
+margin-left: 10px;
+align-items: center;
+gap: 10px;
+}
+
+.copyright { 
+display: flex;
+align-items: center;
+gap: 8px; 
+}
+
+.footer-left { 
+list-style: none;
+display: flex;
+}
+
+/* span { 
+font-size: 16px;
+line-height: 24px;
+} */
+
+.word-container { 
+display: inline-block;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 20px;
+background: #FFC3AA;
+}
+
+#openModalButton {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 94px; /* Set the width and height to match your circular image */
+  height: 94px;
+  background-color: grey;
+  background-size: cover;
+  background: url('../images/avatar.png') no-repeat center center;
+  border: none; /* Remove default button styling */
+  cursor: pointer;
+  z-index: 9999;
+  border-radius: 200px;
+  box-shadow: 0px 8px 16px 4px rgba(194, 194, 194, 0.20);
+}
+
+.modal {
+  display: none;
+  /* Other modal styles */
+}
+
+#openModalButton:hover {
+  opacity: 0.8;
+}
+
+.work-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+     /* apparently gap does not work for inline-flex  */
+    /* gap: 24px;  */
+    
+}
+
+.work-card { 
+    display: flex;
+    max-width: 80%;
+    padding: 40px 120px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; 
+    border-radius: 12px; 
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 8px 16px 4px rgba(194, 194, 194, 0.20); 
+}
+
+.work-card:not(:last-child) {
+    margin-bottom: 24px; /* Add margin to all cards except the last one */
+}
+
+.right-content { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.right-content h3 { 
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.right-content p{ 
+    font-size: 16px;
+
+}
