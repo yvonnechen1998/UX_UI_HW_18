@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="icon" href="images/Logo_YC.svg" type="image/png">
     <title>Yvonne Chen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
 
     <section class="heroImg">
         <div class="content">
-            <img src="images/avatar.png" alt="Memoji of me">
+            <!-- <img src="images/avatar.png" alt="Memoji of me"> -->
             <h1>Hi! I'm Yvonne, <div class="word-container">a UI/UX Designer.</div></h1>
             
             <div class="location">
@@ -62,7 +63,7 @@
             </div> 
         </div>
 
-        <h2>My Work</h2>
+        <!-- <h2>My Work</h2> -->
 
         <div class="work-continer">
             <div class="work-card">
@@ -70,23 +71,44 @@
                 <div class="right-content">
                     <h3>Case Study 1</h3>
                     <p>Short Description</p>
-                    <button>View Case Study</button>
+                    <button class="resume-button">View Case Study</button>
                 </div>
             </div>
             <div class="work-card">
-                Case Study 2 
+                <img src="images/casestudy2.png"> 
+                <div class="right-content">
+                    <h3>Case Study 2</h3>
+                    <p>Short Description</p>
+                    <button class="resume-button">View Case Study</button>
+                </div>
             </div>
             <div class="work-card">
-                Case Study 3
+                <img src="images/MacBook Pro.png"> 
+                <div class="right-content">
+                    <h3>Case Study 1</h3>
+                    <p>Short Description</p>
+                    <button class="resume-button">View Case Study</button>
+                </div>
             </div>
         </div>
     
     </section>
 
     <button id="openModalButton"></button>
+    <img src="images/contactmearrow.svg" alt="Contact Me!" class="arrow">
     <div id="myModal" class="modal">
         <div class="modal-content">
-            
+            <span class="close">&times;</span>
+            <h2> Let’s Chat! 👋</h2>
+            <p class="subtitle">I’d love to connect with you. You can get in touch with me through email or sending me a message through <a href="https://www.linkedin.com/in/yvonne-chen-323504175" target="www.linkedin.com/in/yvonne-chen-323504175">LinkedIn.</a></p>
+            <form class="contact-input">
+                <input type="text" class="text-input" placeholder="Your Name">
+                <input type="text" class="text-input" placeholder="Subject">
+                <input type="text" id="text-area" placeholder="Your Message">
+                <!-- <textarea class="text-area-input" placeholder="Your Message"></textarea> -->
+                <!-- <input type="email" placeholder="Your Email"> -->
+                <button type="submit" class="resume-button" > Submit</button>
+            </form>
             <!-- Modal content goes here -->
         </div>
     </div>
