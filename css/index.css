@@ -1,4 +1,7 @@
 
+html { 
+  scroll-behavior: smooth;
+}
 body{ 
     font-family: 'Inter', sans-serif;
     background: url('../images/background2.png'); 
@@ -141,6 +144,23 @@ box-shadow: 0px 8px 16px 4px rgba(194, 194, 194, 0.20);
   .card {
     width: 100%; /* Cards take full width on smaller screens */
   }
+  .work-container { 
+    flex-direction: column; 
+    gap:12px;
+  }
+  .work-card {
+        flex-direction: column; /* Stack the content */
+        gap: 16px; /* Adjust the gap between elements */
+    }
+
+    /* .work-card img {
+        max-width: 100%; 
+        margin-bottom: 16px; 
+    } */
+
+    .right-content {
+        text-align: center; /* Center the text in smaller screens */
+    }
 }
 
 /* Footer */
@@ -184,6 +204,7 @@ background: #FFC3AA;
 }
 
 #openModalButton {
+  
   position: fixed;
   bottom: 50px;
   right: 200px;
@@ -336,4 +357,8 @@ background: #FFC3AA;
   right: 20px;
   font-size: 24px;
   cursor: pointer;
+}
+
+#myModal { 
+  display: none;
 }
